@@ -13,7 +13,7 @@
     padding: 153px 20px 10px 20px;
 }
 
-.video_items {
+.video__items {
     flex-grow: 1;
     height: 303px;
     width: 300px;
