@@ -30,22 +30,22 @@
 
     <main class="container">
 
-        <form class="form__container">
+        <form class="form__container" data-form>
             <h2 class="form__title">Envie um vídeo!</h2>
                 <div class="form__field">
                     <label class="field__label" for="url">Link embed</label>
                     <input name="url" class="field__write" required
-                        placeholder="Por exemplo: https://www.youtube.com/embed/Lbk4vw5MDbo" id='url' />
+                        placeholder="Por exemplo: https://www.youtube.com/embed/Lbk4vw5MDbo" id='url' data-url/>
                 </div>
 
                 <div class="form__field">
                     <label class="field__label" for="title">Título do vídeo</label>
-                    <input name="title" class="field__write" required placeholder="Neste campo, dê o nome do vídeo" id="title" />
+                    <input name="title" class="field__write" required placeholder="Neste campo, dê o nome do vídeo" id="title" data-title/>
                 </div>
 
                 <div class="form__field">
                     <label class="field__label" for="image">Imagem de perfil</label>
-                    <input name="image" class="field__write" required placeholder="Insira a url da imagem" id="image" />
+                    <input name="image" class="field__write" required placeholder="Insira a url da imagem" id="image" data-image/>
                 </div>
 
                 <input class="form__button" type="submit" />
@@ -53,6 +53,7 @@
 
     </main>
 
+    <script src="../js/createVideo.js" type="module"></script>
 </body>
 
 </html>
