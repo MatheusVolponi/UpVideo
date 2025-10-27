@@ -24,6 +24,13 @@ async function createVideo(title, description, url, image) {
     return convertedConnection;
 }
 
+async function searchVideo(term) {
+  const connection = await fetch(`http://localhost:3000/videos?q=${term}`);
+  const convertedConnection = connection.json();
+
+  return convertedConnection;
+}
+
 export const apiConnect = {
-    videosList, createVideo
+    videosList, createVideo, searchVideo
 }
