@@ -19,8 +19,12 @@ export default function cardBuilder(title, description, url, image) {
 }
 
 async function videoList() {
-    const apiList = await apiConnect.videosList();
-    apiList.forEach(e => list.appendChild(cardBuilder(e.title, e.description, e.url, e.image)));
+    try {
+        const apiList = await apiConnect.videosList();
+        apiList.forEach(e => list.appendChild(cardBuilder(e.title, e.description, e.url, e.image)));
+    } catch {
+        list.innerHTML = `<h2 class="message__title">Não foi possível carregar a lista de vídeos</h2>`
+    }
 }
 
 videoList();

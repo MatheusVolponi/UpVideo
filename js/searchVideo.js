@@ -23,7 +23,7 @@ async function searchVideo(event) {
 
         // Adiciona os resultados
         if (search.length === 0) {
-            list.innerHTML = '<p>Nenhum vídeo encontrado</p>';
+            list.innerHTML = '<p class="message__title>Nenhum vídeo encontrado</p>';
         } else {
             search.forEach(e => list.appendChild(
                 cardBuilder(e.title, e.description, e.url, e.image)
