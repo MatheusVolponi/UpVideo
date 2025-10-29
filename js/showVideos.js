@@ -2,7 +2,7 @@ import { apiConnect } from "./apiConnect.js";
 
 const list = document.querySelector("[data-list]");
 
-function cardBuilder(title, description, url, image) {
+export default function cardBuilder(title, description, url, image) {
     const video = document.createElement("li");
     video.className = "video__items";
     video.innerHTML =  `<iframe width="100%" height="72%" src="${url}"

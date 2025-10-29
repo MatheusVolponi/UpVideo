@@ -37,10 +37,17 @@
     },
     {
       "title": "O FILME DO HEXA! - Bastidores de Corinthians 1x 2 Cruzeiro",
-      "description": "4 mil visualizações",
+      "description": "556 mil visualizações",
       "url": "https://www.youtube.com/embed/mfY1WeepnaQ",
       "image": "https://raw.githubusercontent.com/MatheusVolponi/UpVideo/main/img/logo.png",
       "id": 6
+    },
+    {
+      "title": "Max Verstappen – 2025 Brazil Helmet",
+      "description": "206 mil visualizações",
+      "url": "https://www.youtube.com/embed/GDDy1kjaiHU",
+      "image": "https://raw.githubusercontent.com/MatheusVolponi/UpVideo/main/img/logo.png",
+      "id": 8
     }
   ]
 }

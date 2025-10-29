@@ -9,14 +9,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    z-index: 1;
+    justify-content: flex-start; 
     padding: 153px 20px 10px 20px;
 }
 
 .video__items {
-    flex-grow: 1;
+    flex: 1 1 300px; 
+    max-width: 320px; 
+    min-width: 250px; 
     height: 303px;
-    width: 300px;
 }
 
 /* GRID DE VÍDEOS */

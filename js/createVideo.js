@@ -8,7 +8,7 @@ async function createVideo(event) {
     const image = document.querySelector("[data-image]").value;
     const title = document.querySelector("[data-title]").value;
     const url = document.querySelector("[data-url]").value;
-    const description = Math.floor(Math.random() * 10).toString();
+    const description = Math.floor(Math.random() * 100).toString();
 
     await apiConnect.createVideo(title, description, url, image);
 
